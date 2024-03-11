@@ -1,2 +1,2 @@
 # disfps
-open source first-person shooter
+open source multiplayer first person shooter
