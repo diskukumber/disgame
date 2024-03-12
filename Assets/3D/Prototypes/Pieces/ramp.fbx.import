@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b5k0w5qi2lje1"
-path="res://.godot/imported/ramp.fbx-5dfbf0d0be4105ec6f023d048036eab0.scn"
+path="res://.godot/imported/ramp.fbx-c3e66af2c8fd5671d7191f1526c04ac5.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/ramp.fbx"
-dest_files=["res://.godot/imported/ramp.fbx-5dfbf0d0be4105ec6f023d048036eab0.scn"]
+source_file="res://assets/3d/prototypes/Pieces/ramp.fbx"
+dest_files=["res://.godot/imported/ramp.fbx-c3e66af2c8fd5671d7191f1526c04ac5.scn"]
 
 [params]
 

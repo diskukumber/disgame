@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://6cp0sr3f0w8s"
-path="res://.godot/imported/pillar2.fbx-106b1a41d7f97d83249a327ac58a5533.scn"
+path="res://.godot/imported/pillar2.fbx-5e86c3fe52b7c6e4a127ab5cf124508e.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/pillar2.fbx"
-dest_files=["res://.godot/imported/pillar2.fbx-106b1a41d7f97d83249a327ac58a5533.scn"]
+source_file="res://assets/3d/prototypes/Pieces/pillar2.fbx"
+dest_files=["res://.godot/imported/pillar2.fbx-5e86c3fe52b7c6e4a127ab5cf124508e.scn"]
 
 [params]
 

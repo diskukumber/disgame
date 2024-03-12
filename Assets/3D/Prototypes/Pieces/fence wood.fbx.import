@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c6nyy4qlqc5kc"
-path="res://.godot/imported/fence wood.fbx-e40233418fdc439f682e3201cff0c624.scn"
+path="res://.godot/imported/fence wood.fbx-09e50c998650b260f1f872de3ba212ac.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/fence wood.fbx"
-dest_files=["res://.godot/imported/fence wood.fbx-e40233418fdc439f682e3201cff0c624.scn"]
+source_file="res://assets/3d/prototypes/Pieces/fence wood.fbx"
+dest_files=["res://.godot/imported/fence wood.fbx-09e50c998650b260f1f872de3ba212ac.scn"]
 
 [params]
 

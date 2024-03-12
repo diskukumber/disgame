@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cybqcr714u5lr"
-path="res://.godot/imported/torus.fbx-3821db48ad97d8f2237dcb34bb333490.scn"
+path="res://.godot/imported/torus.fbx-cf944473e4e2b0cf245b932c0d303b8c.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/torus.fbx"
-dest_files=["res://.godot/imported/torus.fbx-3821db48ad97d8f2237dcb34bb333490.scn"]
+source_file="res://assets/3d/prototypes/Pieces/torus.fbx"
+dest_files=["res://.godot/imported/torus.fbx-cf944473e4e2b0cf245b932c0d303b8c.scn"]
 
 [params]
 

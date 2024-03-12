@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://n771j08qe38"
-path="res://.godot/imported/cone3.fbx-8befc5a0a3962daf97978e50b83ebacd.scn"
+path="res://.godot/imported/cone3.fbx-c7b62081e3a8986eed837ca6f70fc400.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/cone3.fbx"
-dest_files=["res://.godot/imported/cone3.fbx-8befc5a0a3962daf97978e50b83ebacd.scn"]
+source_file="res://assets/3d/prototypes/Pieces/cone3.fbx"
+dest_files=["res://.godot/imported/cone3.fbx-c7b62081e3a8986eed837ca6f70fc400.scn"]
 
 [params]
 

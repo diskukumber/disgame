@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dd04al4si6fk4"
-path="res://.godot/imported/railing.fbx-93b0f8b45e6c78bacdbcd46ceae3e620.scn"
+path="res://.godot/imported/railing.fbx-afea734d6081aa8db50309bc85a2d3d4.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/railing.fbx"
-dest_files=["res://.godot/imported/railing.fbx-93b0f8b45e6c78bacdbcd46ceae3e620.scn"]
+source_file="res://assets/3d/prototypes/Pieces/railing.fbx"
+dest_files=["res://.godot/imported/railing.fbx-afea734d6081aa8db50309bc85a2d3d4.scn"]
 
 [params]
 

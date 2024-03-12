@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dchl5nxv1n7kn"
-path="res://.godot/imported/spikes small.fbx-28e440215f475f1f1d91276aced79a67.scn"
+path="res://.godot/imported/spikes small.fbx-90a3e33366aab6d22885918936bead4f.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/spikes small.fbx"
-dest_files=["res://.godot/imported/spikes small.fbx-28e440215f475f1f1d91276aced79a67.scn"]
+source_file="res://assets/3d/prototypes/Pieces/spikes small.fbx"
+dest_files=["res://.godot/imported/spikes small.fbx-90a3e33366aab6d22885918936bead4f.scn"]
 
 [params]
 

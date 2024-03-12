@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bsxstnrscjobt"
-path="res://.godot/imported/ground.fbx-b3413853302239b3430d5e68f00b74c1.scn"
+path="res://.godot/imported/ground.fbx-c1bc82e6d186f72d26fd8433a0c516c8.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/ground.fbx"
-dest_files=["res://.godot/imported/ground.fbx-b3413853302239b3430d5e68f00b74c1.scn"]
+source_file="res://assets/3d/prototypes/Pieces/ground.fbx"
+dest_files=["res://.godot/imported/ground.fbx-c1bc82e6d186f72d26fd8433a0c516c8.scn"]
 
 [params]
 

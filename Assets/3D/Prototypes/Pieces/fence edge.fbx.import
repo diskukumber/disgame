@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://crf0pa8af2u4e"
-path="res://.godot/imported/fence edge.fbx-e4bacb5511df5760587eb8f3a64ee6ab.scn"
+path="res://.godot/imported/fence edge.fbx-d3a4845c088ddc35707564aa6a931710.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/fence edge.fbx"
-dest_files=["res://.godot/imported/fence edge.fbx-e4bacb5511df5760587eb8f3a64ee6ab.scn"]
+source_file="res://assets/3d/prototypes/Pieces/fence edge.fbx"
+dest_files=["res://.godot/imported/fence edge.fbx-d3a4845c088ddc35707564aa6a931710.scn"]
 
 [params]
 

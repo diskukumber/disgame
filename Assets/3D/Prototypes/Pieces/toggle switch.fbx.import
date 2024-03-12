@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://co0sik7x1v2yw"
-path="res://.godot/imported/toggle switch.fbx-e621cac98677fd775749cecf33ea5a6f.scn"
+path="res://.godot/imported/toggle switch.fbx-7d12db7a8610d1bc6c62a23150f0f5d1.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/toggle switch.fbx"
-dest_files=["res://.godot/imported/toggle switch.fbx-e621cac98677fd775749cecf33ea5a6f.scn"]
+source_file="res://assets/3d/prototypes/Pieces/toggle switch.fbx"
+dest_files=["res://.godot/imported/toggle switch.fbx-7d12db7a8610d1bc6c62a23150f0f5d1.scn"]
 
 [params]
 

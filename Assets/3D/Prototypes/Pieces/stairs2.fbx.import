@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cqysw6w0h4tm6"
-path="res://.godot/imported/stairs2.fbx-644c9d8f2807694675adbd8304f46f9b.scn"
+path="res://.godot/imported/stairs2.fbx-da6837a60b8409b53a5354fba271019f.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/stairs2.fbx"
-dest_files=["res://.godot/imported/stairs2.fbx-644c9d8f2807694675adbd8304f46f9b.scn"]
+source_file="res://assets/3d/prototypes/Pieces/stairs2.fbx"
+dest_files=["res://.godot/imported/stairs2.fbx-da6837a60b8409b53a5354fba271019f.scn"]
 
 [params]
 

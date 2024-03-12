@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://1uet61o3g101"
-path="res://.godot/imported/wall window.fbx-ec287782bd9f19dbdaa024dfacf77c7f.scn"
+path="res://.godot/imported/wall window.fbx-b902a4b559f0ec3236ecca9bb7201109.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Prototypes/Pieces/wall window.fbx"
-dest_files=["res://.godot/imported/wall window.fbx-ec287782bd9f19dbdaa024dfacf77c7f.scn"]
+source_file="res://assets/3d/prototypes/Pieces/wall window.fbx"
+dest_files=["res://.godot/imported/wall window.fbx-b902a4b559f0ec3236ecca9bb7201109.scn"]
 
 [params]
 
