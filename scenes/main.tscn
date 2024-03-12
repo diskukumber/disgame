@@ -1,15 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://c36p6d355c7nc"]
+[gd_scene load_steps=8 format=3 uid="uid://c36p6d355c7nc"]
 
 [ext_resource type="Texture2D" uid="uid://dm32ibanwui5i" path="res://assets/environment/textures/prototypes/grids/Dark/texture_07.png" id="1_traxo"]
-[ext_resource type="Texture2D" path="res://assets/environment/partly_cloudy_skybox_2k.hdr" id="2_o2xfo"]
-[ext_resource type="Script" path="res://scripts/player.gd" id="3_y5dxb"]
+[ext_resource type="Texture2D" uid="uid://c1u780wcv56of" path="res://assets/environment/sky/partly_cloudy_skybox_2k.hdr" id="2_veqab"]
+[ext_resource type="PackedScene" uid="uid://d1wjvev4cb5cu" path="res://scenes/FirstPersonController.tscn" id="3_rt3jn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dkf5a"]
 albedo_texture = ExtResource("1_traxo")
 uv1_triplanar = true
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_fp74v"]
-panorama = ExtResource("2_o2xfo")
+panorama = ExtResource("2_veqab")
 
 [sub_resource type="Sky" id="Sky_025ul"]
 sky_material = SubResource("PanoramaSkyMaterial_fp74v")
@@ -19,8 +19,6 @@ background_mode = 2
 sky = SubResource("Sky_025ul")
 tonemap_mode = 2
 glow_enabled = true
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wdi28"]
 
 [node name="world" type="Node3D"]
 
@@ -41,14 +39,5 @@ environment = SubResource("Environment_tfm8n")
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 4.51435, 0)
 shadow_enabled = true
 
-[node name="player" type="CharacterBody3D" parent="."]
-script = ExtResource("3_y5dxb")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("CapsuleShape3D_wdi28")
-
-[node name="head" type="Node3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.88, 0)
-
-[node name="Camera3D" type="Camera3D" parent="player/head"]
+[node name="FirstPersonController" parent="." instance=ExtResource("3_rt3jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.46153, 1, 1.07721)
