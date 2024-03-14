@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1wjvev4cb5cu"]
+
+[ext_resource type="Script" path="res://scripts/FirstPersonController/FirstPersonController.gd" id="1_aitwu"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_frvpu"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vds0r"]
+
+[node name="FirstPersonController" type="CharacterBody3D"]
+script = ExtResource("1_aitwu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_frvpu")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("CapsuleMesh_vds0r")
+
+[node name="CameraController" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.04469, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0116721, -0.154231)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="CameraController/Camera3D"]
+update_mode = 1
