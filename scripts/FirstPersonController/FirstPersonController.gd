@@ -17,7 +17,7 @@ var gravity = 9.8
 
 # Handling mouse Camera control
 func _ready():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_CAPTURED)
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * sensitivity)
@@ -47,3 +47,4 @@ func _physics_process(delta):
 		velocity.x = 0.0
 		velocity.z = 0.0
 	move_and_slide()
+

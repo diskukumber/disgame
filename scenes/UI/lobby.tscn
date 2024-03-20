@@ -1,0 +1,119 @@
+[gd_scene load_steps=10 format=3 uid="uid://dqw4rvh5akp3q"]
+
+[ext_resource type="Texture2D" uid="uid://c1u780wcv56of" path="res://assets/environment/sky/partly_cloudy_skybox_2k.hdr" id="1_a7i1e"]
+[ext_resource type="Script" path="res://scripts/UI/lobby.gd" id="1_dq4vh"]
+[ext_resource type="Texture2D" uid="uid://dm32ibanwui5i" path="res://assets/environment/textures/prototypes/grids/Dark/texture_07.png" id="2_uucbo"]
+[ext_resource type="Texture2D" uid="uid://b4hi7js8vw0ys" path="res://assets/environment/textures/prototypes/grids/Orange/texture_05.png" id="3_liuyr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iavke"]
+albedo_texture = ExtResource("2_uucbo")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yk06c"]
+albedo_texture = ExtResource("3_liuyr")
+uv1_triplanar = true
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_dmyp6"]
+panorama = ExtResource("1_a7i1e")
+
+[sub_resource type="Sky" id="Sky_025ul"]
+sky_material = SubResource("PanoramaSkyMaterial_dmyp6")
+
+[sub_resource type="Environment" id="Environment_elfal"]
+background_mode = 2
+sky = SubResource("Sky_025ul")
+glow_normalized = true
+fog_light_energy = 0.0
+volumetric_fog_density = 0.0068
+
+[node name="lobby" type="CanvasLayer"]
+script = ExtResource("1_dq4vh")
+
+[node name="Background" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.424928, 0, -5.84222)
+size = Vector3(10, 0.3, 10)
+material = SubResource("StandardMaterial3D_iavke")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540281, 3, -5.62427)
+size = Vector3(2, 6, 2)
+material = SubResource("StandardMaterial3D_yk06c")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Background"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="Background/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="Background/SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="environment" type="Node3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.659305, -0.121729, 2.41786)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Background/environment"]
+environment = SubResource("Environment_elfal")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Background/environment"]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, -0.434153, 4.95968, 7.15823)
+light_color = Color(1, 1, 0.160784, 1)
+shadow_enabled = true
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MarginContainer"]
+layout_mode = 2
+
+[node name="StartGame" type="Button" parent="UI/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
+theme_override_colors/font_hover_color = Color(0.878431, 0.454902, 0.188235, 1)
+theme_override_font_sizes/font_size = 32
+text = "START"
+
+[node name="Settings" type="Button" parent="UI/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
+theme_override_colors/font_hover_color = Color(0.878431, 0.454902, 0.188235, 1)
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+
+[node name="Quit" type="Button" parent="UI/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
+theme_override_colors/font_hover_color = Color(0.878431, 0.454902, 0.188235, 1)
+theme_override_font_sizes/font_size = 32
+text = "Quit"
+
+[connection signal="pressed" from="UI/MarginContainer/VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="UI/MarginContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="UI/MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
