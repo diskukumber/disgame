@@ -37,7 +37,7 @@ size = Vector3(10, 0.3, 10)
 material = SubResource("StandardMaterial3D_iavke")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Background"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540281, 3, -5.62427)
+transform = Transform3D(1, 0, 0, 0, 0.458472, 0, 0, 0, 1, 0.540281, 1.13485, -5.62427)
 size = Vector3(2, 6, 2)
 material = SubResource("StandardMaterial3D_yk06c")
 
@@ -91,8 +91,8 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
 theme_override_colors/font_hover_color = Color(0.878431, 0.454902, 0.188235, 1)
+theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
 theme_override_font_sizes/font_size = 32
 text = "START"
 
@@ -100,8 +100,8 @@ text = "START"
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
 theme_override_colors/font_hover_color = Color(0.878431, 0.454902, 0.188235, 1)
+theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
 theme_override_font_sizes/font_size = 32
 text = "Settings"
 
@@ -109,8 +109,8 @@ text = "Settings"
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
 theme_override_colors/font_hover_color = Color(0.878431, 0.454902, 0.188235, 1)
+theme_override_colors/font_pressed_color = Color(0.372549, 0.517647, 0.862745, 1)
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 
