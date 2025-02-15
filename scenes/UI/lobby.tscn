@@ -33,11 +33,21 @@ script = ExtResource("1_dq4vh")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Background"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.424928, 0, -5.84222)
-size = Vector3(10, 0.3, 10)
+size = Vector3(20, 0.3, 20)
 material = SubResource("StandardMaterial3D_iavke")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Background"]
 transform = Transform3D(1, 0, 0, 0, 0.458472, 0, 0, 0, 1, 0.540281, 1.13485, -5.62427)
+size = Vector3(2, 6, 2)
+material = SubResource("StandardMaterial3D_yk06c")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 0.458472, 0, 0, 0, 1, -6.86725, 1.13485, -7.57787)
+size = Vector3(2, 6, 2)
+material = SubResource("StandardMaterial3D_yk06c")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 0.458472, 0, 0, 0, 1, 7.21527, 1.13485, -10.8554)
 size = Vector3(2, 6, 2)
 material = SubResource("StandardMaterial3D_yk06c")
 
