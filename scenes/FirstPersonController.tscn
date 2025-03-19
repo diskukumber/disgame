@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=4 uid="uid://devysep4kjjo6"]
 
-[ext_resource type="Script" path="res://scripts/FirstPersonController/FirstPersonController.gd" id="1_ov24w"]
+[ext_resource type="Script" uid="uid://euggbmc5ejsl" path="res://scripts/FirstPersonController/FirstPersonController.gd" id="1_ov24w"]
 [ext_resource type="AnimationLibrary" uid="uid://b0ck5e514v0r8" path="res://assets/animations/player.glb" id="2_q120l"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_22wsl"]
@@ -741,8 +741,8 @@ skin = SubResource("Skin_s0e1t")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Visuals/YBot"]
 libraries = {
-"": SubResource("AnimationLibrary_uutnr"),
-"player": ExtResource("2_q120l")
+&"": SubResource("AnimationLibrary_uutnr"),
+&"player": ExtResource("2_q120l")
 }
 
 [node name="FirstPersonCameraController" type="Node3D" parent="."]

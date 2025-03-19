@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://devysep4kjjo6" path="res://scenes/FirstPersonController.tscn" id="5_1tsku"]
 [ext_resource type="Texture2D" uid="uid://br4pkn4sxmix7" path="res://assets/Prototype Textures/pink.png" id="6_10cjy"]
 [ext_resource type="PackedScene" uid="uid://bvvodxxurcquo" path="res://scenes/UI/PauseMenu.tscn" id="6_kqvku"]
-[ext_resource type="Script" path="res://scripts/WORLD/FPSCounterLabel.gd" id="7_bncqp"]
+[ext_resource type="Script" uid="uid://dtj4ywi1h0cxp" path="res://scripts/WORLD/FPSCounterLabel.gd" id="7_bncqp"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_fp74v"]
 panorama = ExtResource("4_ruhi7")
