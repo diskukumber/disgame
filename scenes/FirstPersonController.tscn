@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://devysep4kjjo6"]
+[gd_scene format=4 uid="uid://devysep4kjjo6"]
 
 [ext_resource type="Script" uid="uid://euggbmc5ejsl" path="res://scripts/FirstPersonController/FirstPersonController.gd" id="1_ov24w"]
 [ext_resource type="AnimationLibrary" uid="uid://b0ck5e514v0r8" path="res://assets/animations/player.glb" id="2_q120l"]
@@ -259,22 +259,22 @@ blend_shape_mode = 0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_uutnr"]
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" unique_id=747633471]
 script = ExtResource("1_ov24w")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=247339792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_22wsl")
 
-[node name="Visuals" type="Node3D" parent="."]
+[node name="Visuals" type="Node3D" parent="." unique_id=1695245519]
 
-[node name="YBot" type="Node3D" parent="Visuals"]
+[node name="YBot" type="Node3D" parent="Visuals" unique_id=1700576926]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
-[node name="Armature" type="Node3D" parent="Visuals/YBot"]
+[node name="Armature" type="Node3D" parent="Visuals/YBot" unique_id=374702044]
 transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
 
-[node name="Skeleton3D" type="Skeleton3D" parent="Visuals/YBot/Armature"]
+[node name="Skeleton3D" type="Skeleton3D" parent="Visuals/YBot/Armature" unique_id=766072064]
 bones/0/name = "mixamorig_Hips"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, -8.78096e-05, -2.787e-06, 2.787e-06, 0, 1, -8.78096e-05, -1, 0, -6.75701e-06, 4.84474e-05, -99.7919)
@@ -731,27 +731,26 @@ bones/64/position = Vector3(-8.19564e-08, 10, 5.51343e-07)
 bones/64/rotation = Quaternion(-8.44739e-09, 1.30531e-08, -2.55386e-09, 1)
 bones/64/scale = Vector3(1, 1, 1)
 
-[node name="Alpha_Joints" type="MeshInstance3D" parent="Visuals/YBot/Armature/Skeleton3D"]
+[node name="Alpha_Joints" type="MeshInstance3D" parent="Visuals/YBot/Armature/Skeleton3D" unique_id=501271489]
 mesh = SubResource("ArrayMesh_286ql")
 skin = SubResource("Skin_s0e1t")
 
-[node name="Alpha_Surface" type="MeshInstance3D" parent="Visuals/YBot/Armature/Skeleton3D"]
+[node name="Alpha_Surface" type="MeshInstance3D" parent="Visuals/YBot/Armature/Skeleton3D" unique_id=1377983677]
 mesh = SubResource("ArrayMesh_37t8i")
 skin = SubResource("Skin_s0e1t")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Visuals/YBot"]
-libraries = {
-&"": SubResource("AnimationLibrary_uutnr"),
-&"player": ExtResource("2_q120l")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Visuals/YBot" unique_id=910092070]
+libraries/ = SubResource("AnimationLibrary_uutnr")
+libraries/player = ExtResource("2_q120l")
 
-[node name="FirstPersonCameraController" type="Node3D" parent="."]
+[node name="FirstPersonCameraController" type="Node3D" parent="." unique_id=1625765267]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962009, 1.66712, -0.1638)
 
-[node name="FirstPersonCamera" type="Camera3D" parent="FirstPersonCameraController"]
+[node name="FirstPersonCamera" type="Camera3D" parent="FirstPersonCameraController" unique_id=61037053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.008015186)
 
-[node name="ThirdPersonCameraController" type="Node3D" parent="."]
+[node name="ThirdPersonCameraController" type="Node3D" parent="." unique_id=1744990302]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.860545, 1.56953, 1.72607)
 
-[node name="ThirdPersonCamera" type="Camera3D" parent="ThirdPersonCameraController"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+[node name="ThirdPersonCamera" type="Camera3D" parent="ThirdPersonCameraController" unique_id=308910100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31211978, 0, -0.2212851)
