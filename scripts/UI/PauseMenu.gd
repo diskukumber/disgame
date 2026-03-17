@@ -27,7 +27,7 @@ func _on_options_menu_pressed():
 	get_tree().change_scene_to_file("res://scenes/UI/OptionsMenu.tscn")
 
 func _on_main_menu_pressed():
-	get_tree().change_scene_to_file("res://scenes/UI/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://scenes/UI/lobby.tscn")
 
 func _on_exitto_desktop_pressed():
 	get_tree().quit()
