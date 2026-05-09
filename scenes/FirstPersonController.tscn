@@ -1,7 +1,8 @@
-[gd_scene format=4 uid="uid://devysep4kjjo6"]
+[gd_scene format=4 uid="uid://bgtnmoioe4un"]
 
-[ext_resource type="Script" uid="uid://euggbmc5ejsl" path="res://scripts/FirstPersonController/FirstPersonController.gd" id="1_ov24w"]
+[ext_resource type="Script" path="res://scripts/FirstPersonController/FirstPersonController.gd" id="1_ov24w"]
 [ext_resource type="AnimationLibrary" uid="uid://b0ck5e514v0r8" path="res://assets/animations/player.glb" id="2_q120l"]
+[ext_resource type="Script" path="res://scripts/Player/CameraController.gd" id="3_cam"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_22wsl"]
 
@@ -743,14 +744,24 @@ skin = SubResource("Skin_s0e1t")
 libraries/ = SubResource("AnimationLibrary_uutnr")
 libraries/player = ExtResource("2_q120l")
 
-[node name="FirstPersonCameraController" type="Node3D" parent="." unique_id=1625765267]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962009, 1.66712, -0.1638)
+[node name="CameraController" type="Node3D" parent="." unique_id=1515337654]
+script = ExtResource("3_cam")
+start_in_first_person = null
+third_person_distance = null
+third_person_min_distance = null
+collision_margin = null
+tps_pitch_limit = null
+fps_pitch_limit = null
+rotation_speed = null
+camera_lag_speed = null
+mouse_sensitivity = null
+camera_height = null
+switch_view_action = null
 
-[node name="FirstPersonCamera" type="Camera3D" parent="FirstPersonCameraController" unique_id=61037053]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.008015186)
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraController" unique_id=123456789]
 
-[node name="ThirdPersonCameraController" type="Node3D" parent="." unique_id=1744990302]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.860545, 1.56953, 1.72607)
+[node name="ThirdPersonCamera" type="Camera3D" parent="CameraController/SpringArm3D" unique_id=308910100]
 
-[node name="ThirdPersonCamera" type="Camera3D" parent="ThirdPersonCameraController" unique_id=308910100]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31211978, 0, -0.2212851)
+[node name="Head" type="Node3D" parent="CameraController" unique_id=987654321]
+
+[node name="CameraController_FirstPersonCameraController#FirstPersonCamera" type="Camera3D" parent="." unique_id=61037053]
