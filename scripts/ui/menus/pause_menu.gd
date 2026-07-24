@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+func _ready() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
 
 # changing the mouse mode when the game is paused & Pausing the game
 func open():
@@ -13,7 +15,7 @@ func close():
 	get_tree().paused = false
 
 func _process(_delta):
-	if Input.is_action_just_pressed("PauseMenu"):
+	if Input.is_action_just_pressed("ui_cancel"):
 		if visible:
 			close()
 		else:
@@ -24,9 +26,11 @@ func _on_resume_pressed():
 	close()
 
 func _on_options_menu_pressed():
-	get_tree().change_scene_to_file("res://scenes/UI/OptionsMenu.tscn")
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://scenes/ui/menus/options_menu.tscn")
 
 func _on_main_menu_pressed():
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://scenes/UI/lobby.tscn")
 
 func _on_exitto_desktop_pressed():

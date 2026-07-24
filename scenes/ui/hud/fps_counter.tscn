@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://u2ypqsw3f10n"]
+
+[sub_resource type="GDScript" id="GDScript_niqc4"]
+script/source = "extends Label
+
+var fps_text: String = \"\"
+
+func _process(_delta: float) -> void:
+	fps_text = \"FPS: \" + str(Engine.get_frames_per_second())
+	text = fps_text
+"
+
+[node name="FPSCounter" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="FPSLabel" type="Label" parent="."]
+layout_mode = 1
+anchor_right = 0.1
+anchor_bottom = 0.1
+offset_right = 5.0
+offset_bottom = 5.0
+script = SubResource("GDScript_niqc4")
+text = "FPS: 0"
